@@ -1,0 +1,15 @@
+.opcion {
+  padding: 5px 5px 5px 5px;
+}
+
+.invalido {
+  background-color: #f66151;
+}
+
+.cover {
+  filter: grayscale(100%);
+}
+
+.carton-ganador {
+  background-color: #2ec27e;
+}

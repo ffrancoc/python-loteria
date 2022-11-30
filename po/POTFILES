@@ -1,0 +1,6 @@
+data/com.github.ffrancoc.Loteria.desktop.in
+data/com.github.ffrancoc.Loteria.appdata.xml.in
+data/com.github.ffrancoc.Loteria.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

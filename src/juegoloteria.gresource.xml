@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/github/ffrancoc/Loteria">
+    <file preprocess="xml-stripblanks">gtk/window.ui</file>
+    <file preprocess="xml-stripblanks">gtk/bienvenida.ui</file>
+    <file preprocess="xml-stripblanks">gtk/seleccion.ui</file>
+    <file preprocess="xml-stripblanks">gtk/opcion-a.ui</file>
+    <file preprocess="xml-stripblanks">gtk/opcion-b.ui</file>
+    <file preprocess="xml-stripblanks">gtk/principal.ui</file>
+    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <!-- css -->
+    <file>css/style.css</file>
+    <file>assets/logo.svg</file>
+    <!-- cartones -->
+    <file>assets/carton/carton1.png</file>
+    <file>assets/carton/carton2.png</file>
+    <file>assets/carton/carton3.png</file>
+    <file>assets/carton/carton4.png</file>
+    <file>assets/carton/carton5.png</file>
+    <file>assets/carton/carton6.png</file>
+    <file>assets/carton/carton7.png</file>
+    <file>assets/carton/carton8.png</file>
+    <file>assets/carton/carton9.png</file>
+    <file>assets/carton/carton10.png</file>
+    <!-- cartas -->
+    <file>assets/carta/carta1.png</file>
+    <file>assets/carta/carta2.png</file>
+    <file>assets/carta/carta3.png</file>
+    <file>assets/carta/carta4.png</file>
+    <file>assets/carta/carta5.png</file>
+    <file>assets/carta/carta6.png</file>
+    <file>assets/carta/carta7.png</file>
+    <file>assets/carta/carta8.png</file>
+    <file>assets/carta/carta9.png</file>
+    <file>assets/carta/carta10.png</file>
+    <file>assets/carta/carta11.png</file>
+    <file>assets/carta/carta12.png</file>
+    <file>assets/carta/carta13.png</file>
+    <file>assets/carta/carta14.png</file>
+    <file>assets/carta/carta15.png</file>
+    <file>assets/carta/carta16.png</file>
+    <file>assets/carta/carta17.png</file>
+    <file>assets/carta/carta18.png</file>
+    <file>assets/carta/carta19.png</file>
+    <file>assets/carta/carta20.png</file>
+    <file>assets/carta/carta21.png</file>
+    <file>assets/carta/carta22.png</file>
+    <file>assets/carta/carta23.png</file>
+    <file>assets/carta/carta24.png</file>
+    <file>assets/carta/carta25.png</file>
+    <file>assets/carta/carta26.png</file>
+    <file>assets/carta/carta27.png</file>
+    <file>assets/carta/carta28.png</file>
+    <file>assets/carta/carta29.png</file>
+    <file>assets/carta/carta30.png</file>
+    <file>assets/carta/carta31.png</file>
+    <file>assets/carta/carta32.png</file>
+    <file>assets/carta/carta33.png</file>
+    <file>assets/carta/carta34.png</file>
+    <file>assets/carta/carta35.png</file>
+    <file>assets/carta/carta36.png</file>
+    <file>assets/carta/carta37.png</file>
+    <file>assets/carta/carta38.png</file>
+    <file>assets/carta/carta39.png</file>
+    <file>assets/carta/carta40.png</file>
+    <file>assets/carta/carta41.png</file>
+    <file>assets/carta/carta42.png</file>
+    <file>assets/carta/carta43.png</file>
+    <file>assets/carta/carta44.png</file>
+    <file>assets/carta/carta45.png</file>
+    <file>assets/carta/carta46.png</file>
+    <file>assets/carta/carta47.png</file>
+    <file>assets/carta/carta48.png</file>
+    <file>assets/carta/carta49.png</file>
+    <file>assets/carta/carta50.png</file>
+    <file>assets/carta/carta51.png</file>
+    <file>assets/carta/carta52.png</file>
+    <file>assets/carta/carta53.png</file>
+    <file>assets/carta/carta54.png</file>
+  </gresource>
+</gresources>

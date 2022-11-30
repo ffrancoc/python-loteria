@@ -1,0 +1,81 @@
+using Gtk 4.0;
+using Adw 1;
+
+template JuegoloteriaOpcionA : Gtk.Box {
+  orientation: horizontal;
+  spacing: 100;
+  halign: center;
+  margin-end: 30;
+  margin-start: 30;
+  margin-bottom: 50;
+
+  Box box_jugador_a{
+    orientation: vertical;
+    width-request: 200;
+    Box {
+      orientation: vertical;
+      Entry nombre_jugador_a{
+        placeholder-text: "Nombre del jugador";
+        text: "Jugador A";
+        max-length: 20;
+        changed => on_cambio_nombre_jugador_a();
+      }
+      ComboBoxText combo_jugador_a{
+         items [
+          carton1: "Carton 1",
+          carton2: "Carton 2",
+          carton3: "Carton 3",
+          carton4: "Carton 4",
+          carton5: "Carton 5",
+          carton6: "Carton 6",
+          carton7: "Carton 7",
+          carton8: "Carton 8",
+          carton9: "Carton 9",
+          carton10: "Carton 10",
+        ]
+        changed => on_seleccionar_carton_a();
+      }
+      styles["linked"]
+    }
+    Picture vista_carton_a {
+      width-request: 100;
+      vexpand: true;
+    }
+    styles["card", "opcion"]
+  }
+
+  Box box_jugador_b{
+    orientation: vertical;
+    width-request: 200;
+    Box {
+      orientation: vertical;
+      Entry nombre_jugador_b{
+        placeholder-text: "Nombre del jugador";
+        text: "Jugador B";
+        max-length: 20;
+        changed => on_cambio_nombre_jugador_b();
+      }
+      ComboBoxText combo_jugador_b{
+         items [
+          carton1: "Carton 1",
+          carton2: "Carton 2",
+          carton3: "Carton 3",
+          carton4: "Carton 4",
+          carton5: "Carton 5",
+          carton6: "Carton 6",
+          carton7: "Carton 7",
+          carton8: "Carton 8",
+          carton9: "Carton 9",
+          carton10: "Carton 10",
+        ]
+        changed => on_seleccionar_carton_b();
+      }
+      styles["linked"]
+    }
+    Picture vista_carton_b {
+      width-request: 100;
+      vexpand: true;
+    }
+    styles["card", "opcion"]
+  }
+}

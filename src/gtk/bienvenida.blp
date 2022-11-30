@@ -1,0 +1,35 @@
+using Gtk 4.0;
+using Adw 1;
+
+template JuegoloteriaVistaBienvenida : Gtk.Box {
+  orientation: vertical;
+
+  Box {
+    orientation: vertical;
+
+    HeaderBar {
+      show-title-buttons: false;
+      [end]
+      Button {
+        icon-name: "window-close-symbolic";
+        focusable: false;
+        clicked => on_cerrar_aplicacion();
+      }
+      styles["flat"]
+    }
+
+    Adw.StatusPage status_page{
+      title: "Loteria";
+      description: "Simple juego de loteria";
+      vexpand: true;
+      child: Adw.Clamp {
+        maximum-size: 300;
+        Button {
+          label: "Iniciar Juego";
+          clicked => on_iniciar_juego();
+          styles["suggested-action", "pill"]
+        }
+      };
+    }
+  }
+}

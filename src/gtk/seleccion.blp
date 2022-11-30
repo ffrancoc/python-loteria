@@ -1,0 +1,60 @@
+using Gtk 4.0;
+using Adw 1;
+
+template JuegoloteriaVistaSeleccion : Gtk.Box {
+  orientation: vertical;
+  spacing: 50;
+
+  HeaderBar {
+    show-title-buttons: false;
+
+    [start]
+    Button {
+      icon-name: "go-previous-symbolic";
+      focusable: false;
+      clicked => on_volver();
+    }
+
+    [start]
+    Label {
+      label: "Volver";
+      styles["title-3"]
+    }
+
+    [end]
+    Button btn_continuar {
+      label: "Continuar";
+      clicked => on_continuar();
+      styles["suggested-action", "pill"]
+    }
+    styles["flat"]
+  }
+
+  Label {
+    label: "Numero de Jugadores";
+    styles["title-2"]
+  }
+
+  Box {
+    orientation: horizontal;
+    halign: center;
+
+    ToggleButton btn_opcion_a{
+      label: "2 Jugadores";
+      active: true;
+      toggled => on_seleccion_a();
+    }
+    ToggleButton {
+      label: "3 Jugadores";
+      group: btn_opcion_a;
+      toggled => on_seleccion_b();
+    }
+    styles["linked"]
+  }
+
+  Stack stack_menu {
+    transition-type: slide_up_down;
+    vexpand: true;
+    notify => on_cambiar_menu();
+  }
+}

@@ -1,0 +1,60 @@
+using Gtk 4.0;
+using Adw 1;
+
+template JuegoloteriaVistaPrincipal : Gtk.Box {
+  orientation: vertical;
+  spacing: 20;
+
+  HeaderBar {
+    show-title-buttons: false;
+
+    [start]
+    Button {
+      icon-name: "go-previous-symbolic";
+      focusable: false;
+      clicked => on_volver();
+    }
+
+    [start]
+    Label {
+      label: "Volver";
+      styles["title-3"]
+    }
+
+    [end]
+    Button btn_cantar_carta {
+      label: "Cantar carta";
+      focusable: false;
+      clicked => on_cantar_carta();
+      styles["suggested-action", "pill"]
+    }
+
+    styles["flat"]
+  }
+
+  Box {
+    orientation: vertical;
+    margin-end: 20;
+    margin-start: 20;
+
+    Label grid_cartas_titulo{
+      styles["title-3"]
+    }
+
+    Grid grid_cartas {
+      column-homogeneous: false;
+      row-homogeneous: false;
+      halign: center;
+      margin-top: 10;
+      margin-bottom: 10;
+    }
+    styles["card"]
+  }
+
+  Box box_cartones {
+    orientation: horizontal;
+    spacing: 20;
+    halign: center;
+    margin-bottom: 5;
+  }
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=juegoloteria
+Exec=juegoloteria
+Icon=com.github.ffrancoc.Loteria
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
