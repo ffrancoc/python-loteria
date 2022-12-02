@@ -34,8 +34,6 @@ class JuegoloteriaApplication(Adw.Application):
     def __init__(self):
         super().__init__(application_id='com.github.ffrancoc.Loteria',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
-        self.create_action('quit', self.quit, ['<primary>q'])
-        self.create_action('about', self.on_about_action)
 
     def do_activate(self):
         win = self.props.active_window
@@ -46,24 +44,6 @@ class JuegoloteriaApplication(Adw.Application):
             style_context = win.get_style_context()
             style_context.add_provider_for_display(win.get_display(), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER)
         win.present()
-
-    def on_about_action(self, widget, _):
-        """Callback for the app.about action."""
-        about = Adw.AboutWindow(transient_for=self.props.active_window,
-                                application_name='juegoloteria',
-                                application_icon='com.github.ffrancoc.Loteria',
-                                developer_name='Francisco Curin',
-                                version='0.1.0',
-                                developers=['Francisco Curin'],
-                                copyright='© 2022 Francisco Curin')
-        about.present()
-
-    def create_action(self, name, callback, shortcuts=None):
-        action = Gio.SimpleAction.new(name, None)
-        action.connect("activate", callback)
-        self.add_action(action)
-        if shortcuts:
-            self.set_accels_for_action(f"app.{name}", shortcuts)
 
 
 def main(version):

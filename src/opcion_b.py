@@ -89,7 +89,7 @@ class JuegoloteriaOpcionB(Gtk.Box):
 
         condicion_a = jugador_a.carton in [jugador_b.carton, jugador_c.carton]
         condicion_b = len(jugador_a.nombre) > 0 and len(jugador_b.nombre) > 0 and len(jugador_c.nombre) > 0
-        condicion_c = jugador_b.nombre in [jugador_a.nombre, jugador_c.nombre]
+        condicion_c = jugador_a.nombre in [jugador_b.nombre, jugador_c.nombre]
         # print(f'JUGADOR A CONDICIONES: {[condicion_a, condicion_b, condicion_c]} - {condicion_a and condicion_b and condicion_c} {jugador_a.carton} in {[jugador_b.carton, jugador_c.carton]}')
 
         if not condicion_a and condicion_b and not condicion_c:
@@ -136,11 +136,15 @@ class JuegoloteriaOpcionB(Gtk.Box):
         if condicion_a and not condicion_b and not condicion_c:
             self.vista_seleccion.habilitar_siguiente(True)
             self.box_jugador_b.get_style_context().remove_class('invalido')
-
-            if self.box_jugador_a.get_style_context().has_class('invalido'): self.box_jugador_a.get_style_context().remove_class('invalido')
-            if self.box_jugador_c.get_style_context().has_class('invalido'): self.box_jugador_c.get_style_context().remove_class('invalido')
-
             self.window.modificar_opcion_seleccionada('b', [jugador_a, jugador_b, jugador_c])
+
+            if jugador_a.carton == jugador_c.carton:
+                self.vista_seleccion.habilitar_siguiente(False)
+                self.window.modificar_opcion_seleccionada(None, [])
+            else:
+                if self.box_jugador_a.get_style_context().has_class('invalido'): self.box_jugador_a.get_style_context().remove_class('invalido')
+                if self.box_jugador_c.get_style_context().has_class('invalido'): self.box_jugador_c.get_style_context().remove_class('invalido')
+
 
         if condicion_a and not condicion_b and condicion_c:
             self.vista_seleccion.habilitar_siguiente(False)

@@ -7,7 +7,6 @@
     <file preprocess="xml-stripblanks">gtk/opcion-a.ui</file>
     <file preprocess="xml-stripblanks">gtk/opcion-b.ui</file>
     <file preprocess="xml-stripblanks">gtk/principal.ui</file>
-    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
     <!-- css -->
     <file>css/style.css</file>
     <file>assets/logo.svg</file>
