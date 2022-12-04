@@ -71,8 +71,12 @@ class JuegoloteriaOpcionB(Gtk.Box):
             self.vista_seleccion.habilitar_siguiente(True)
             self.box_jugador_a.get_style_context().remove_class('invalido')
 
-            if self.box_jugador_b.get_style_context().has_class('invalido'): self.box_jugador_b.get_style_context().remove_class('invalido')
-            if self.box_jugador_c.get_style_context().has_class('invalido'): self.box_jugador_c.get_style_context().remove_class('invalido')
+            if jugador_b.nombre == jugador_c.nombre:
+                self.vista_seleccion.habilitar_siguiente(False)
+                self.window.modificar_opcion_seleccionada(None, [])
+            else:
+                if self.box_jugador_b.get_style_context().has_class('invalido'): self.box_jugador_b.get_style_context().remove_class('invalido')
+                if self.box_jugador_c.get_style_context().has_class('invalido'): self.box_jugador_c.get_style_context().remove_class('invalido')
 
             self.window.modificar_opcion_seleccionada('b', [jugador_a, jugador_b, jugador_c])
 
@@ -138,7 +142,7 @@ class JuegoloteriaOpcionB(Gtk.Box):
             self.box_jugador_b.get_style_context().remove_class('invalido')
             self.window.modificar_opcion_seleccionada('b', [jugador_a, jugador_b, jugador_c])
 
-            if jugador_a.carton == jugador_c.carton:
+            if jugador_a.nombre == jugador_c.nombre:
                 self.vista_seleccion.habilitar_siguiente(False)
                 self.window.modificar_opcion_seleccionada(None, [])
             else:
@@ -207,8 +211,12 @@ class JuegoloteriaOpcionB(Gtk.Box):
             self.vista_seleccion.habilitar_siguiente(True)
             self.box_jugador_c.get_style_context().remove_class('invalido')
 
-            if self.box_jugador_a.get_style_context().has_class('invalido'): self.box_jugador_a.get_style_context().remove_class('invalido')
-            if self.box_jugador_b.get_style_context().has_class('invalido'): self.box_jugador_b.get_style_context().remove_class('invalido')
+            if jugador_a.nombre == jugador_b.nombre:
+                self.vista_seleccion.habilitar_siguiente(False)
+                self.window.modificar_opcion_seleccionada(None, [])
+            else:
+                if self.box_jugador_a.get_style_context().has_class('invalido'): self.box_jugador_a.get_style_context().remove_class('invalido')
+                if self.box_jugador_b.get_style_context().has_class('invalido'): self.box_jugador_b.get_style_context().remove_class('invalido')
 
             self.window.modificar_opcion_seleccionada('b', [jugador_a, jugador_b, jugador_c])
 

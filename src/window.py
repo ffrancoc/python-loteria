@@ -126,7 +126,7 @@ class JuegoloteriaWindow(Adw.ApplicationWindow):
             "carton4": ["carta43", "carta44", "carta45", "carta21", "carta52", "carta53", "carta54", "carta26", "carta7", "carta8", "carta9", "carta31", "carta16", "carta17", "carta18", "carta36"],
             "carton5": ["carta22", "carta23", "carta24", "carta25", "carta27", "carta28", "carta29", "carta30", "carta32", "carta33", "carta34", "carta35", "carta37", "carta38", "carta39", "carta40"],
             "carton6": ["carta21", "carta22", "carta23", "carta24", "carta30", "carta31", "carta32", "carta33", "carta39", "carta40", "carta41", "carta42", "carta48", "carta49", "carta50", "carta51"],
-            "carton7": ["carta25", "carta26", "carta27", "carta41", "carta34", "carta35", "carta36", "carta46", "carta43", "carta44", "carta45", "carta51", "carta51", "carta53", "carta54", "carta32"],
+            "carton7": ["carta25", "carta26", "carta27", "carta41", "carta34", "carta35", "carta36", "carta46", "carta43", "carta44", "carta45", "carta51", "carta52", "carta53", "carta54", "carta32"],
             "carton8": ["carta42", "carta43", "carta44", "carta45", "carta47", "carta48", "carta49", "carta50", "carta52", "carta53", "carta54", "carta1", "carta40", "carta10", "carta19", "carta20"],
             "carton9": ["carta41", "carta42", "carta37", "carta38", "carta50", "carta51", "carta46", "carta47", "carta5", "carta6", "carta1", "carta2", "carta14", "carta15", "carta10", "carta11"],
             "carton10": ["carta39", "carta40", "carta19", "carta20", "carta48", "carta49", "carta28", "carta29", "carta3", "carta4", "carta37", "carta38", "carta12", "carta13", "carta46", "carta47"],
